@@ -102,11 +102,11 @@ define('logging', [], function()
     {
         var methods = ['logDebug', 'logTrace', 'logError', 'logInfo', 'LogWarn'];
         var methods_length = methods.length;
-        var disableTracing = true;
+        var disableTracing = false;
 
-        if (typeof fromTracingExcludedMethods == "undefined" || fromTracingExcludedMethods === false)
+        if (typeof fromTracingExcludedMethods !== "undefined" && fromTracingExcludedMethods === false)
         {
-            disableTracing = false;
+            disableTracing = true;
         }
 
         fromTracingExcludedMethods = fromTracingExcludedMethods || ['logDebug', 'logTrace', 'logError', 'logInfo', 'LogWarn'];
@@ -124,7 +124,7 @@ define('logging', [], function()
                         (function(functionName) {
                             var originalFunction = target[functionName];
                             target[functionName] = function() {
-                                target.logTrace(functionName, arguments);
+                                logWithPrefix(target.loggingPrefix + '.' + functionName, 'trace', arguments);
                                 return originalFunction.apply(target, arguments);
                             };
                         })(key);
