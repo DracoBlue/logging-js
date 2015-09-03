@@ -1,11 +1,11 @@
-define('logging', [], function()
+var logging = function()
 {
     "use strict";
 
-    /* We need a indexOf Pollyfill */
+    /* We need a indexOf Polyfill */
     [].indexOf||(Array.prototype.indexOf=function(a,b,c){for(c=this.length,b=(c+~~b)%c;b<c&&(!(b in this)||this[b]!==a);b++);return b^c?b:-1;});
 
-    /* We need a console Pollyfill (defaults to no action!) */
+    /* We need a console Polyfill (defaults to no action!) */
     if (typeof(console) === "undefined")
     {
         var empty_function = function()
@@ -160,4 +160,13 @@ define('logging', [], function()
     logging.level = logging.LEVEL_ALL;
 
     return logging;
-});
+})();
+
+
+if (typeof define !== "undefined" && define.amd) {
+    define('logging', function() {
+        return logging;
+    });
+} else if (typeof module === 'object' && module.exports) {
+    module.exports = logging;
+}

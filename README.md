@@ -4,7 +4,7 @@ Easy lib to trace function calls and write log messages into the `console` objec
 
 Latest Release: [![GitHub version](https://badge.fury.io/gh/DracoBlue%2Flogging-js.png)](https://github.com/DracoBlue/logging-js/releases)
 
-logging.js is copyright 2014 by DracoBlue <http://dracoblue.net>
+logging.js is copyright 2014-2015 by DracoBlue <http://dracoblue.net>
 
 ## Installation
 
@@ -12,6 +12,12 @@ Copy the `logging.js` into your project or require it with bower:
 
 ``` console
 $ bower install logging.js
+```
+
+or use npm:
+
+``` console
+$ npm install --save node-logging-js
 ```
 
 ## Usage
@@ -60,6 +66,9 @@ will be excluded from tracing.
 
 ## Changelog
 
+* dev
+  - added .travis.yml
+  - added npm package.json
 * 1.0.2 (2015/09/03)
   - automatic tracing only active if `logging.level >= logging.LEVEL_TRACE`
 * 1.0.1 (2014/08/31)

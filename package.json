@@ -1,0 +1,21 @@
+{
+  "name": "node-logging-js",
+  "description": "Easy lib to trace function calls and write log messages into the `console` object.",
+  "main": "logging.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DracoBlue/logging-js.git"
+  },
+  "keywords": [
+    "logging",
+    "console",
+    "tracing"
+  ],
+  "license": "MIT",
+  "homepage": "http://dracoblue.net/",
+  "author": "DracoBlue <JanS@DracoBlue.de>",
+  "bugs": {
+    "url": "https://github.com/DracoBlue/logging.js/issues"
+  },
+  "homepage": "https://github.com/DracoBlue/logging.js#readme"
+}
