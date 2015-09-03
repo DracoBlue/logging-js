@@ -60,6 +60,8 @@ will be excluded from tracing.
 
 ## Changelog
 
+* 1.0.2 (2015/09/03)
+  - automatic tracing only active if `logging.level >= logging.LEVEL_TRACE`
 * 1.0.1 (2014/08/31)
   - tracing now with `Example.callTwo` instead of `Example` `callTwo` (for easier filtering)
   - fixed a bug with `fromTracingExcludedMethods`

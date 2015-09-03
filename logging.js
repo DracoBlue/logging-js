@@ -124,7 +124,10 @@ define('logging', [], function()
                         (function(functionName) {
                             var originalFunction = target[functionName];
                             target[functionName] = function() {
-                                logWithPrefix(target.loggingPrefix + '.' + functionName, 'trace', arguments);
+                                if (logging.level >= logging.LEVEL_TRACE)
+                                {
+                                    logWithPrefix(target.loggingPrefix + '.' + functionName, 'trace', arguments);
+                                }
                                 return originalFunction.apply(target, arguments);
                             };
                         })(key);
