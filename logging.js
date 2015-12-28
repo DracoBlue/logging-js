@@ -1,4 +1,4 @@
-var logging = function()
+var logging = (function()
 {
     "use strict";
 
