@@ -13,7 +13,7 @@ deploy:
   provider: npm
   email: JanS@DracoBlue.de
   api_key:
-    secure: j9oP+cxTL033+ELos3w7QccfzRrQ9Jxd+i8+6rF+P5xK/WsHXMfI4mbZYCV2SR8JQgGKibFzKEXkIp9BHax36HFDBjcS+ZPxzV3qVC3VVMxHRgB27p+IuvVNenFL3q+e/pTxNJCoxnkc6ffinScF16AdCSkm2CQ9f/4FoFXz0XQ=
+    secure: jLPIskNuiXvB5ZHofLaPok9vgGAfHgFxNw0bczEtFULbQ2l+Sdo8UOSELxOrE4woY4q6BwbNsdWQoGzmLZ6qCVo/nmbCVZBM3JbUm/gUQdVdad03P5h5x8OZjQM3LqcBmewAKk4ALB0yF+gWAgSbO57Iwz92NRa/MsYbHSEuE6U=
   on:
     tags: true
     repo: DracoBlue/logging-js
