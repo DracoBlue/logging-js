@@ -100,7 +100,7 @@ var logging = function()
 
     logging.applyLogging = function(target, loggingPrefix, fromTracingExcludedMethods)
     {
-        var methods = ['logDebug', 'logTrace', 'logError', 'logInfo', 'LogWarn'];
+        var methods = ['logDebug', 'logTrace', 'logError', 'logInfo', 'logWarn'];
         var methods_length = methods.length;
         var disableTracing = false;
 
@@ -109,7 +109,7 @@ var logging = function()
             disableTracing = true;
         }
 
-        fromTracingExcludedMethods = fromTracingExcludedMethods || ['logDebug', 'logTrace', 'logError', 'logInfo', 'LogWarn'];
+        fromTracingExcludedMethods = fromTracingExcludedMethods || ['logDebug', 'logTrace', 'logError', 'logInfo', 'logWarn'];
 
         target.loggingPrefix = loggingPrefix;
 
