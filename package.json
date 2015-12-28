@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/DracoBlue/logging-js.git"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
     "logging",
     "console",
