@@ -1,6 +1,6 @@
 ## logging.js CHANGELOG
 
-* dev
+* 1.2.0 (2016/04/20)
   - added mocha tests
   - use `console.warm` for logWarn
 * 1.1.1 (2015/12/28)
