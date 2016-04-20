@@ -2,6 +2,7 @@
 
 * dev
   - added mocha tests
+  - use `console.warm` for logWarn
 * 1.1.1 (2015/12/28)
   - fixed syntax issue in logging.js
 * 1.1.0 (2015/12/28)
