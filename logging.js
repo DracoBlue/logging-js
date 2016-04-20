@@ -15,6 +15,7 @@ var logging = (function()
         console = {};
         console.log = empty_function;
         console.error = empty_function;
+        console.warn = empty_function;
         console.info = empty_function;
         console.debug = empty_function;
         console.trace = empty_function;
@@ -86,7 +87,7 @@ var logging = (function()
     {
         if (logging.level >= logging.LEVEL_WARN)
         {
-            logWithPrefix(this.loggingPrefix, 'info', arguments);
+            logWithPrefix(this.loggingPrefix, 'warn', arguments);
         }
     };
 
